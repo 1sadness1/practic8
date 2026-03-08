@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Каталог товаров</h1>
+            <nav>
+                <a href="#" id="main-link" class="active">Главная</a>
+                <a href="#" id="categories-link">Категории</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">Все категории</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Поиск товаров...">
+        </div>
+
+        <div id="products-container" class="products-grid">
+            <div class="loading">Загрузка товаров...</div>
+        </div>
+
+        <div id="product-details" class="product-details hidden">
+            <button class="back-btn" onclick="backToCatalog()">← Назад к списку</button>
+            <div class="product-info">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Каталог товаров. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
