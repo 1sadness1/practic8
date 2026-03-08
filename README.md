@@ -9,7 +9,6 @@
 - [Серверная часть (Backend)](#серверная-часть-backend)
 - [Клиентская часть (Frontend)](#клиентская-часть-frontend)
 - [API документация (Swagger)](#api-документация-swagger)
-- [Интерфейс пользователя](#интерфейс-пользователя)
 - [Инструкция по запуску](#инструкция-по-запуску)
 - [Вывод](#вывод)
 
@@ -48,10 +47,6 @@
 ## База данных
 Модели данных (models.py)
 
-from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text, DateTime
-from sqlalchemy.orm import relationship
-from datetime import datetime
-from database import Base
 
 class Category(Base):
     __tablename__ = 'categories'
@@ -116,11 +111,13 @@ class Product(Base):
 
 
 ![Стили](screenshots/style.css.png)
+
 *Рисунок 7 - Код файла styles.css*
 
 
 
 ![Логика](screenshots/script.js.png)
+
 *Рисунок 8 - Код файла script.js*
 
 ## API документация (Swagger)
@@ -129,25 +126,6 @@ class Product(Base):
 ![Главная](screenshots/swagger.png)
 
 *Рисунок 9 - Главная страница Swagger документации*
-
-Эндпоинт /products/all
-![Эндпоинд](screenshots/products all.png)
-
-*Рисунок 10 - Документация эндпоинта получения всех товаров*
-
-Эндпоинт /products/get/{id}
-![Эндпоинд](screenshots/products get.png)
-
-*Рисунок 11 - Документация эндпоинта получения товара по ID*
-
-
-## Интерфейс пользователя
-
-
-![Главная](screenshots/главная каталог.png)
-
-*Рисунок 12 - Главная страница с сеткой товаров*
-
 
 
 ## Инструкция по запуску
